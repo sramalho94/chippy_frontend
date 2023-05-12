@@ -3,7 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { BsInfoCircle } from 'react-icons/bs'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div className="flex flex-row justify-center space-x-5 py-5 border-b-2">
       <Link href="/">
@@ -34,4 +34,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavBar
