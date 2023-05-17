@@ -22,7 +22,7 @@ const NavBar = () => {
           <h1 className="font-bold">Profile</h1>
         </div>
       </Link>
-      <Link href="/">
+      <Link href="/about">
         <div className="flex flex-col justify-center align-middle my-auto">
           <div className="flex flex-row justify-center">
             <BsInfoCircle className="h-10 w-10" />
