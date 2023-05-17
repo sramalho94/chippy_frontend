@@ -4,20 +4,20 @@ import axios from 'axios'
 import {BASE_URL} from '../app/globals.js'
 import { useEffect, useState } from 'react'
 
-const FilterForm = () => {
-    type Chip = {
-        chipName: string,
-        flavor: string,
-        brand: string,
-        MSRP: string,
-        type: string,
-        quantity: number,
-        limited: boolean,
-        likeCount: number,
-        dislikeCount: number,
-        userId: number
-    }
+type Chip = {
+    chipName: string,
+    flavor: string,
+    brand: string,
+    MSRP: string,
+    type: string,
+    quantity: number,
+    limited: boolean,
+    likeCount: number,
+    dislikeCount: number,
+    userId: number
+}
 
+const FilterForm = () => {
     const [allChips, setAllChips] = useState([])
     const [allFlavors, setAllFlavors] = useState<string[]>([])
     const [allBrands, setAllBrands] = useState<string[]>([])
