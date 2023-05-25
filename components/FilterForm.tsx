@@ -58,22 +58,18 @@ const FilterForm = () => {
         getChipBrands()
     }, [allChips])
 
-    useEffect(() => {
-        console.log(allFlavors, allBrands)
-    }, [allFlavors, allBrands])
-
     return (
     <form>
         <h2>Flavors:</h2>
         {allFlavors.map((flavor) => (
-            <div>
+            <div key={flavor}>
                 <input type="checkbox" id={flavor} name={flavor} value={flavor}></input>
                 <label htmlFor={flavor}>{flavor}</label>
             </div>
         ))}
         <h2>Brands:</h2>
         {allBrands.map((brand) => (
-            <div>
+            <div key={brand}>
                 <input type="checkbox" id={brand} name={brand} value={brand}></input>
                 <label htmlFor={brand}>{brand}</label>
             </div>
