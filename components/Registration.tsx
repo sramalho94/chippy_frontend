@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { registerUser } from "../app/api/hello/api";
+import { registerUser } from "../services/Auth";
 
 interface FormData {
   username: string;
