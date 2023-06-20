@@ -30,6 +30,14 @@ const NavBar = () => {
           <h1 className="font-bold">About</h1>
         </div>
       </Link>
+      <Link href="/register">
+        <div className="flex flex-col justify-center align-middle my-auto">
+          <div className="flex flex-row justify-center">
+            <BsInfoCircle className="h-10 w-10" />
+          </div>
+          <h1 className="font-bold">Register</h1>
+        </div>
+      </Link>
     </div>
   )
 }
