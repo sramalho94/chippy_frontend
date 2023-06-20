@@ -1,10 +1,13 @@
+import LoginForm from '@/components/LoginForm'
 import React from 'react'
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div>page</div>
+    <div className="flex flex-col pt-10 min-h-screen">
+        <LoginForm />
+    </div>
   )
 }
 
