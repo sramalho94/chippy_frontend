@@ -22,7 +22,6 @@ const Registration = () => {
 
     try {
       const response = await registerUser(formData);
-      console.log(response);
     } catch (error) {
       console.error(error);
     }
