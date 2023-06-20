@@ -7,12 +7,14 @@ import FilterForm from '@/components/FilterForm'
 import Registration from '@/components/Registration'
 
 const inter = Inter({ subsets: ['latin'] })
-const user={}
+const user = {}
 export default function Home() {
-  return <main className={styles.main}>
-    <SearchBar />
-    <FilterForm/>
-    {/* <Profile user={{user}}/> */}
-    <Registration/>
-  </main>
+  return (
+    <main className={styles.main}>
+      <SearchBar />
+      <FilterForm />
+      {/* <Profile user={{user}}/> */}
+      {/* <Registration/> */}
+    </main>
+  )
 }
